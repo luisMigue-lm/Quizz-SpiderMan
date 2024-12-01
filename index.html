@@ -10,87 +10,196 @@
 
 <body>
     <header class="cabecalho">
-        <h1>Bem-vindo ao quiz do Homem-Aranha</h1>
+        <h1>Bem-vindo ao Quizz do Aranha Verso!</h1>
         <h2>O objetivo é descobrir qual homem aranha você é</h2>
     </header>
 
     <section class="corpo">
-        <div class="pergnt1">
-            <h1>Pergunta 1</h1>
-            <label><input type="radio" name="pergunta1" value="punk-aranha"></label>
-            <label><input type="radio" name="pergunta1" value="porco-aranha"></label>
-            <label><input type="radio" name="pergunta1" value="spider-gwen"></label>
-            <label><input type="radio" name="pergunta1" value="miles-morales"></label>
+        <div class="perguntas pergunta1">
+            <h3>Pergunta 1</h3>
+            <p>Qual dessas gêneros musicais você mais se identifica?</p>
+
+            <input type="radio" id="prgt1-SpiderPunk" name="pergunta1" value="punk-aranha">
+            <label for="prgt1-SpiderPunk">Punk</label>
+
+            <input type="radio" id="prgt1-PorcoAranha" name="pergunta1" value="porco-aranha"></label>
+            <label for="prgt1-PorcoAranha">Sertanejo</label>
+
+            <input type="radio" id="prgt1-SpiderGwen" name="pergunta1" value="spider-gwen">
+            <label for="prgt1-SpiderGwen">Rock</label>
+
+            <input type="radio" id="prgt1-MilesMorales" name="pergunta1" value="miles-morales">
+            <label for="prgt1-MilesMorales">Hip Hop</label>
+
+            <button id="btn1" onclick="mudarPergunta()">Próximo</button>
 
         </div>
-        <div class="pergnt2">
-            <h1>Pergunta 2</h1>
-            <label><input type="radio" name="pergunta2" value="miles-morales"></label>
-            <label><input type="radio" name="pergunta2" value="punk-aranha"></label>
-            <label><input type="radio" name="pergunta2" value="porco-aranha"></label>
-            <label><input type="radio" name="pergunta2" value="spider-gwen"></label>
+        <div class="perguntas pergunta2">
+            <h3>Pergunta 2</h3>
+            <input type="radio" id="prgt2-PorcoAranha" name="pergunta2" value="porco-aranha">
+            <label for="prgt2-PorcoAranha"></label>
+
+            <input type="radio" id="prgt2-MilesMorales" name="pergunta2" value="miles-morales">
+            <label for="prgt2-MilesMorales"></label>
+
+            <input type="radio" id="prgt2-SpiderGwen" name="pergunta2" value="spider-gwen">
+            <label for="prgt2-SpiderGwen"></label>
+
+            <input type="radio" id="prgt2-SpiderPunk" name="pergunta2" value="punk-aranha">
+            <label for="prgt2-SpiderPunk"></label>
+
+            <button>Próximo</button>
+
         </div>
-        <div class="pergnt3">
-            <h1>Pergunta 3</h1>
-            <label><input type="radio" name="pergunta3" value="spider-gwen"></label>
-            <label><input type="radio" name="pergunta3" value="miles-morales"></label>
-            <label><input type="radio" name="pergunta3" value="punk-aranha"></label>
-            <label><input type="radio" name="pergunta3" value="porco-aranha"></label>
+        <div class="perguntas pergunta3">
+            <h3>Pergunta 3</h3>
+
+            <input type="radio" id="prgt3-SpiderGwen" name="pergunta3" value="spider-gwen">
+            <label for="prgt3-SpiderGwen"></label>
+
+            <input type="radio" id="prgt3-SpiderPunk" name="pergunta3" value="punk-aranha">
+            <label for="prgt3-SpiderPunk"></label>
+
+            <input type="radio" id="prgt3-MilesMorales" name="pergunta3" value="miles-morales">
+            <label for="prgt3-MilesMorales"></label>
+
+            <input type="radio" id="prgt3-PorcoAranha" name="pergunta3" value="porco-aranha">
+            <label for="prgt3-PorcoAranha"></label>
+
+            <button>Próximo</button>
+
         </div>
-        <div class="pergnt4">
-            <h1>Pergunta 4</h1>
-            <label><input type="radio" name="pergunta4" value="porco-aranha"></label>
-            <label><input type="radio" name="pergunta4" value="spider-gwen"></label>
-            <label><input type="radio" name="pergunta4" value="miles-morales"></label>
-            <label><input type="radio" name="pergunta4" value="punk-aranha"></label>
+        <div class="perguntas pergunta4">
+            <h3>Pergunta 4</h3>
+
+            <input type="radio" id="prgt4-SpiderPunk" name="pergunta4" value="punk-aranha">
+            <label for="prgt4-SpiderPunk"></label>
+
+            <input type="radio" id="prgt4-PorcoAranha" name="pergunta4" value="porco-aranha">
+            <label for="prgt4-PorcoAranha"></label>
+
+            <input type="radio" id="prgt4-SpiderGwen" name="pergunta4" value="spider-gwen">
+            <label for="prgt4-SpiderGwen"></label>
+
+            <input type="radio" id="prgt4-MilesMorales" name="pergunta4" value="miles-morales">
+            <label for="prgt4-MilesMorales"></label>
+
+            <button>Próximo</button>
+
         </div>
-        <div class="pergnt5">
-            <h1>Pergunta 5</h1>
-            <label><input type="radio" name="pergunta5" value="punk-aranha"></label>
-            <label><input type="radio" name="pergunta5" value="porco-aranha"></label>
-            <label><input type="radio" name="pergunta5" value="spider-gwen"></label>
-            <label><input type="radio" name="pergunta5" value="miles-morales"></label>
+        <div class="perguntas pergunta5">
+            <h3>Pergunta 5</h3>
+
+            <input type="radio" id="prgt5-SpiderPunk" name="pergunta5" value="punk-aranha">
+            <label for="prgt5-SpiderPunk"></label>
+
+            <input type="radio" id="prgt5-PorcoAranha" name="pergunta5" value="porco-aranha">
+            <label for="prgt5-PorcoAranha"></label>
+
+            <input type="radio" id="prgt5-SpiderGwen" name="pergunta5" value="spider-gwen">
+            <label for="prgt5-SpiderGwen"></label>
+
+            <input type="radio" id="prgt5-MilesMorales" name="pergunta5" value="miles-morales">
+            <label for="prgt5-MilesMorales"></label>
+
+            <button>Próximo</button>
+
+
         </div>
-        <div class="pergnt6">
-            <h1>Pergunta 6</h1>
-            <label><input type="radio" name="pergunta6" value="miles-morales"></label>
-            <label><input type="radio" name="pergunta6" value="punk-aranha"></label>
-            <label><input type="radio" name="pergunta6" value="porco-aranha"></label>
-            <label><input type="radio" name="pergunta6" value="spider-gwen"></label>
+        <div class="perguntas pergunta6">
+            <h3>Pergunta 6</h3>
+
+            <input type="radio" id="prgt6-SpiderPunk" name="pergunta6" value="punk-aranha">
+            <label for="prgt6-SpiderPunk"></label>
+
+            <input type="radio" id="prgt6-PorcoAranha" name="pergunta6" value="porco-aranha">
+            <label for="prgt6-PorcoAranha"></label>
+
+            <input type="radio" id="prgt6-SpiderGwen" name="pergunta6" value="spider-gwen">
+            <label for="prgt6-SpiderGwen"></label>
+
+            <input type="radio" id="prgt6-MilesMorales" name="pergunta6" value="miles-morales">
+            <label for="prgt6-MilesMorales"></label>
+
+            <button>Próximo</button>
+
         </div>
-        <div class="pergnt7">
-            <h1>Pergunta 7</h1>
-            <label><input type="radio" name="pergunta7" value="spider-gwen"></label>
-            <label><input type="radio" name="pergunta7" value="miles-morales"></label>
-            <label><input type="radio" name="pergunta7" value="punk-aranha"></label>
-            <label><input type="radio" name="pergunta7" value="porco-aranha"></label>
+        <div class="perguntas pergunta7">
+            <h3>Pergunta 7</h3>
+
+            <input type="radio" id="prgt7-SpiderPunk" name="pergunta7" value="punk-aranha">
+            <label for="prgt7-SpiderPunk"></label>
+
+            <input type="radio" id="prgt7-PorcoAranha" name="pergunta7" value="porco-aranha">
+            <label for="prgt7-PorcoAranha"></label>
+
+            <input type="radio" id="prgt7-SpiderGwen" name="pergunta7" value="spider-gwen">
+            <label for="prgt7-SpiderGwen"></label>
+
+            <input type="radio" id="prgt7-MilesMorales" name="pergunta7" value="miles-morales">
+            <label for="prgt7-MilesMorales"></label>
+
+            <button>Próximo</button>
+
         </div>
-        <div class="pergnt8">
-            <h1>Pergunta 8</h1>
-            <label><input type="radio" name="pergunta8" value="porco-aranha"></label>
-            <label><input type="radio" name="pergunta8" value="spider-gwen"></label>
-            <label><input type="radio" name="pergunta8" value="miles-morales"></label>
-            <label><input type="radio" name="pergunta8" value="punk-aranha"></label>
+        <div class="perguntas pergunta8">
+            <h3>Pergunta 8</h3>
+
+            <input type="radio" id="prgt8-SpiderPunk" name="pergunta8" value="punk-aranha">
+            <label for="prgt8-SpiderPunk"></label>
+
+            <input type="radio" id="prgt8-PorcoAranha" name="pergunta8" value="porco-aranha">
+            <label for="prgt8-PorcoAranha"></label>
+
+            <input type="radio" id="prgt8-SpiderGwen" name="pergunta8" value="spider-gwen">
+            <label for="prgt8-SpiderGwen"></label>
+
+            <input type="radio" id="prgt8-MilesMorales" name="pergunta8" value="miles-morales">
+            <label for="prgt8-MilesMorales"></label>
+
+            <button>Próximo</button>
+
         </div>
-        <div class="pergnt9">
-            <h1>Pergunta 9</h1>
-            <label><input type="radio" name="pergunta9" value="punk-aranha"></label>
-            <label><input type="radio" name="pergunta9" value="porco-aranha"></label>
-            <label><input type="radio" name="pergunta9" value="spider-gwen"></label>
-            <label><input type="radio" name="pergunta9" value="miles-morales"></label>
+        <div class="perguntas pergunta9">
+            <h3>Pergunta 9</h3>
+
+            <input type="radio" id="prgt9-SpiderPunk" name="pergunta9" value="punk-aranha">
+            <label for="prgt9-SpiderPunk"></label>
+
+            <input type="radio" id="prgt9-PorcoAranha" name="pergunta9" value="porco-aranha">
+            <label for="prgt9-PorcoAranha"></label>
+
+            <input type="radio" id="prgt9-SpiderGwen" name="pergunta9" value="spider-gwen">
+            <label for="prgt9-SpiderGwen"></label>
+
+            <input type="radio" id="prgt9-MilesMorales" name="pergunta9" value="miles-morales">
+            <label for="prgt9-MilesMorales"></label>
+
+            <button>Próximo</button>
+
         </div>
-        <div class="pergnt10">
-            <h1>Pergunta 10</h1>
-            <label><input type="radio" name="pergunta10" value="miles-morales"></label>
-            <label><input type="radio" name="pergunta10" value="porco-aranha"></label>
-            <label><input type="radio" name="pergunta10" value="porco-aranha"></label>
-            <label><input type="radio" name="pergunta10" value="spider-gwen"></label>
+        <div class="perguntas pergunta10">
+            <h3>Pergunta 10</h3>
+            <input type="radio" id="prgt10-SpiderPunk" name="pergunta10" value="punk-aranha">
+            <label for="prgt10-SpiderPunk"></label>
+
+            <input type="radio" id="prgt10-PorcoAranha" name="pergunta10" value="porco-aranha">
+            <label for="prgt10-PorcoAranha"></label>
+
+            <input type="radio" id="prgt10-SpiderGwen" name="pergunta10" value="spider-gwen">
+            <label for="prgt10-SpiderGwen"></label>
+
+            <input type="radio" id="prgt10-MilesMorales" name="pergunta10" value="miles-morales">
+            <label for=""></label>
+
+
+            <button>Próximo</button>
         </div>
 
     </section>
 
     <footer class="rodape">
-        <h1>Resultado, meu mano</h1>
+        <h1>Resultado</h1>
         <button onclick="calcularPontuacao()">Mostrar resultado</button>
 
         <h1 id="resultado"></h1>

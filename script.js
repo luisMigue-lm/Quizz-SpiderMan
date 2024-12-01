@@ -6,20 +6,20 @@ let contPorcoAranha = 0;
 let radios = document.querySelectorAll('input[type="radio"]');
 
 function calcularPontuacao() {
-    radios.forEach(e => {
+    radios.forEach(resp => {
         
-        if (e.checked) {
+        if (resp.checked) {
 
-            if (e.value == "punk-aranha") {
+            if (resp.value == "punk-aranha") {
                 contSpiderPunk++;
 
-            } else if (e.value == "spider-gwen") {
+            } else if (resp.value == "spider-gwen") {
                 contSpiderGwen++;
 
-            } else if (e.value == "miles-morales") {
+            } else if (resp.value == "miles-morales") {
                 contMilesMorales++;
 
-            } else if (e.value == "porco-aranha"){
+            } else if (resp.value == "porco-aranha"){
                 contPorcoAranha++;
 
             }
@@ -28,6 +28,7 @@ function calcularPontuacao() {
 
         resultado();
         salvarDados();
+        maiorResultado();
         
     })
 }
@@ -35,7 +36,7 @@ function calcularPontuacao() {
 function resultado() {
     let resultado = `Miles Morales = ${contMilesMorales}<br>
     Spider-Gwen = ${contSpiderGwen}<br>
-    Porco-Aranha = ${contSpiderGwen}<br>
+    Porco-Aranha = ${contPorcoAranha}<br>
     Punk-Aranha = ${contSpiderPunk}`;
 
     document.getElementById("resultado").innerHTML = resultado;
@@ -48,9 +49,35 @@ function salvarDados() {
     localStorage.setItem('porco-aranha', contPorcoAranha)
 }
 
-function trocarPagina() {
-    
-    /*setTimeout(() =>{
-        window.open(pagina+'.html')
-    }, 5000); */
+function maiorResultado() {
+    let maior = 0;
+    let empate = 0
+    let pag;
+
+    if (contMilesMorales >= maior) {
+        pag = "miles-morales"
+        maior = contMilesMorales
+    }
+
+    if (contSpiderGwen >= maior) {
+        pag = "spider-gwen"
+        maior = contSpiderGwen
+
+    }
+
+    if (contSpiderPunk >= maior) {
+        pag = "spider-punk"
+        maior = contSpiderPunk
+    }
+
+    if (contPorcoAranha >= maior) {
+        pag = "porco-aranha"
+        maior = contPorcoAranha
+    } 
+
+    setTimeout(() =>{
+        window.open(pag+'.html')
+    }, 5000);
+
 }
+
