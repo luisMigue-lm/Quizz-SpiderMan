@@ -1,23 +1,16 @@
-.corpo{
-    color: red;
+@font-face {
+    font-family: "spider";
+    src: url("../Quizz-SpiderMan/resources/font/HeroesLegend.ttf") format("truetype");
 }
 
-.pergunta2{
-    color: blue;
+body{
+
 }
 
-.pergunta4{
-    color: blue;
+.perguntas{
+    font-family: "spider";
 }
 
-.pergunta6{
-    color: blue;
-}
-
-.pergunta8{
-    color: blue;
-}
-
-.pergunta10{
-    color: blue;
+.exibir{
+    display: none;
 }

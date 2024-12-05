@@ -2,12 +2,15 @@ let contSpiderGwen = 0;
 let contSpiderPunk = 0;
 let contMilesMorales = 0;
 let contPorcoAranha = 0;
+let contAll = [Number]
+let pag;
 
 let radios = document.querySelectorAll('input[type="radio"]');
 
 function calcularPontuacao() {
+
     radios.forEach(resp => {
-        
+
         if (resp.checked) {
 
             if (resp.value == "punk-aranha") {
@@ -19,18 +22,19 @@ function calcularPontuacao() {
             } else if (resp.value == "miles-morales") {
                 contMilesMorales++;
 
-            } else if (resp.value == "porco-aranha"){
+            } else if (resp.value == "porco-aranha") {
                 contPorcoAranha++;
 
             }
 
         }
 
-        resultado();
-        salvarDados();
-        maiorResultado();
-        
     })
+
+    resultado();
+    salvarDados();
+    maiorResultado();
+
 }
 
 function resultado() {
@@ -51,33 +55,42 @@ function salvarDados() {
 
 function maiorResultado() {
     let maior = 0;
-    let empate = 0
-    let pag;
+
 
     if (contMilesMorales >= maior) {
         pag = "miles-morales"
         maior = contMilesMorales
-    }
+
+    } 
 
     if (contSpiderGwen >= maior) {
         pag = "spider-gwen"
         maior = contSpiderGwen
-
-    }
+    
+    } 
 
     if (contSpiderPunk >= maior) {
         pag = "spider-punk"
         maior = contSpiderPunk
-    }
+
+    } 
 
     if (contPorcoAranha >= maior) {
         pag = "porco-aranha"
         maior = contPorcoAranha
+
     } 
 
-    setTimeout(() =>{
-        window.open(pag+'.html')
+
+    setTimeout(() => {
+        window.open(pag + '.html')
     }, 5000);
+
+        
+    }
 
 }
 
+function mudarPergunta() {
+    
+}
