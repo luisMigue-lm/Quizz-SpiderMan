@@ -6,14 +6,30 @@
     <title>Você é a...</title>
 </head>
 <body>
-    <img src="https://tenor.com/m84JCSzmh5S.gif" alt="">
+    <img src="https://media.tenor.com/lzb4ce_bNEYAAAAj/gwen-stacy-gwen.gif" alt="GIF da Spider Gwen">
     <h1>Você é a Spider Gwen</h1>
     <p>A Gwen Stacy interage frequentemente com as pessoas ao seu redor, engaja-se em conversas e realmente gosta de socializar. Sua atitude amigável e calorosa permite que ela estabeleça relacionamentos significativos e conecte-se emocionalmente com as pessoas.</p>
+    <p id="porcentagem"></p>
 
     <style>
         body{
+            display: flex;
+            flex-direction: column;
             justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        img{
+            height: 300px;
         }
     </style>
+
+    <script>
+        let contSpiderGwen = localStorage.getItem("spider-gwen")
+        document.querySelector('#porcentagem').innerHTML = 'Você é '+ contSpiderGwen+ "0% Spider Gwen"
+    </script>
 </body>
 </html>

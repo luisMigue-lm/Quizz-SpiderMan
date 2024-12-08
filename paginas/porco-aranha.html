@@ -6,14 +6,30 @@
     <title>Você é o...</title>
 </head>
 <body>
-    <img src="https://tenor.com/1mi4.gif" alt="">
+    <img src="https://media1.tenor.com/m/7Rq22KwnK-EAAAAd/hey-spider-puppy.gif" alt="GIF do Porco-Aranha">
     <h1>Você é o Porco Aranha</h1>
-    <p></p>
+    <p>Peter aparenta ser corajoso e se importa muito com os seus companheiros, uma forte personalidade dele é a de bondade ajudando os outros</p>
+    <p id="porcentagem"></p>
 
     <style>
         body{
+            display: flex;
+            flex-direction: column;
             justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        img{
+            height: 300px;
         }
     </style>
+
+    <script>
+        let contPorcoAranha = localStorage.getItem("porco-aranha")
+        document.querySelector('#porcentagem').innerHTML = 'Você é '+ contPorcoAranha+ "0% Porco Aranha"
+    </script>
 </body>
 </html>

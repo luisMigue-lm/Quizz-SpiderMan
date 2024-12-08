@@ -6,14 +6,30 @@
     <title>Você é o...</title>
 </head>
 <body>
-    <img src="https://tenor.com/uUCeHg9qHbJ.gif" alt="">
+    <img src="https://media1.tenor.com/m/8a3hDwQCWLUAAAAd/spiderpunk.gif" alt="GIF do Spider Punk">
     <h1>Você é o Spider Punk</h1>
     <p>O Spider-Punk é cheio de atitude, com um ar indiferente ao que todos pensam e muita energia contra as corporações.</p>
+    <p id="porcentagem"></p>
 
     <style>
         body{
+            display: flex;
+            flex-direction: column;
             justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        img{
+            height: 350px;
         }
     </style>
+
+    <script>
+        let contSpiderPunk = localStorage.getItem("punk-aranha")
+        document.querySelector('#porcentagem').innerHTML = 'Você é '+ contSpiderPunk+ "0% Punk Aranha"
+    </script>
 </body>
 </html>

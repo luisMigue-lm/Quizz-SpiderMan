@@ -6,20 +6,30 @@
     <title>Você é o...</title>
 </head>
 <body>
-    <img src="https://tenor.com/bPbxk.gif" alt="">
+    <img src="https://media1.tenor.com/m/QVp42eIRr5cAAAAd/into-the-spider-verse-nitro-pfp.gif" alt="GIF do Miles Morales">
     <h1>Você é o Miles Morales</h1>
     <p>O Miles é um garoto esperto, curioso, inteligente e ligeiramente desleixado, porém demonstra extrema lealdade e compromisso com sua família e amigos mesmo em situações de perigo.</p>
     <p id="porcentagem"></p>
 
     <style>
         body{
+            display: flex;
+            flex-direction: column;
             justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        img{
+            height: 400px;
         }
     </style>
 
     <script>
         let contMiles = localStorage.getItem("miles-morales")
-        document.querySelector('#porcentagem').innerHTML = 'Você é '+ contMiles+ " Miles Morales"
+        document.querySelector('#porcentagem').innerHTML = 'Você é '+ contMiles+ "0% Miles Morales"
     </script>
 </body>
 </html>

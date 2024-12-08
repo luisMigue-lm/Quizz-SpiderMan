@@ -83,13 +83,10 @@ function maiorResultado() {
 
 
     setTimeout(() => {
-        window.open(pag + '.html')
+        window.open('/paginas/' +pag + '.html')
     }, 5000);
-
         
     }
-
-}
 
 function mudarPergunta() {
     
