@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "Spider-Man";
+    src: url("/resources/font/HeroesLegend.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Spider-ManHQ";
+    src: url("/resources/font/Heroes\ Legend\ Hollow.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    font-family: "Spider-Man";
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 90%;
+    padding: 20vw 4.9vw 20vw 5vw;
+    background-image: url("/resources/imgs/Background3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titulo {
+    width: 100%;
+}
+
+.titulo h1 {
+    width: 100%;
+    margin-bottom: 2%;
+    color: #d4192d
+    
+}
+
+.titulo h2 {
+    width: 100%;
+    color: #0138d1;
+
+}
+
+.corpo, .rodape, .rodape button{
+    font-family: "Spider-ManHQ";
+}
+
+.pergunta1 {
+    
+}
+
