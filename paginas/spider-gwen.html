@@ -1,35 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Você é a...</title>
 </head>
+
 <body>
     <img src="https://media.tenor.com/lzb4ce_bNEYAAAAj/gwen-stacy-gwen.gif" alt="GIF da Spider Gwen">
     <h1>Você é a Spider Gwen</h1>
-    <p>A Gwen Stacy interage frequentemente com as pessoas ao seu redor, engaja-se em conversas e realmente gosta de socializar. Sua atitude amigável e calorosa permite que ela estabeleça relacionamentos significativos e conecte-se emocionalmente com as pessoas.</p>
+    <p>A Gwen Stacy interage frequentemente com as pessoas ao seu redor, engaja-se em conversas e realmente gosta de
+        socializar. Sua atitude amigável e calorosa permite que ela estabeleça relacionamentos significativos e
+        conecte-se emocionalmente com as pessoas.</p>
     <p id="porcentagem"></p>
 
     <style>
-        body{
+        @font-face {
+            font-family: "Spider-Man";
+            src: url("/resources/font/Heroes\ Legend\ Hollow.ttf") format("truetype");
+        }
+
+        body {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: "Spider-Man";
         }
 
-        img{
+        img {
             height: 300px;
         }
     </style>
 
     <script>
         let contSpiderGwen = localStorage.getItem("spider-gwen")
-        document.querySelector('#porcentagem').innerHTML = 'Você é '+ contSpiderGwen+ "0% Spider Gwen"
+        contSpiderGwen = parseInt(contSpiderGwen);
+        const totalQuestoes = 10;
+        const porcentagemSpiderGwen = ((contSpiderGwen / totalQuestoes) * 100).toFixed(2);
+
+        document.querySelector('#porcentagem').innerHTML = 'Você é ' + porcentagemSpiderGwen + "% Spider Gwen!"
     </script>
 </body>
+
 </html>

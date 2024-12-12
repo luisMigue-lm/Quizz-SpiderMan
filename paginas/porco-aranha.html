@@ -12,6 +12,11 @@
     <p id="porcentagem"></p>
 
     <style>
+        @font-face {
+            font-family: "Spider-Man";
+            src: url("/resources/font/Heroes\ Legend\ Hollow.ttf") format("truetype");
+        }
+
         body{
             display: flex;
             flex-direction: column;
@@ -19,7 +24,7 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: "Spider-Man";
         }
 
         img{
@@ -29,7 +34,11 @@
 
     <script>
         let contPorcoAranha = localStorage.getItem("porco-aranha")
-        document.querySelector('#porcentagem').innerHTML = 'Você é '+ contPorcoAranha+ "0% Porco Aranha"
+        contPorcoAranha = parseInt(contPorcoAranha);
+        const totalQuestoes = 10;
+        const porcentagemPorcoAranha = ((contPorcoAranha / totalQuestoes) * 100).toFixed(2);
+
+        document.querySelector('#porcentagem').innerHTML = 'Você é '+ porcentagemPorcoAranha + "% Porco Aranha!"
     </script>
 </body>
 </html>

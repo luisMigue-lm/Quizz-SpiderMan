@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que você fez!?</title>
+</head>
+
+<body>
+    <img src="" alt="GIF do Spider Man 2099">
+    <h1>Você é uma falha no multiverso!</h1>
+    <p>texto :D</p>
+    <p id="porcentagem"></p>
+
+    <style>
+        @font-face {
+            font-family: "Spider-Man";
+            src: url("/resources/font/Heroes\ Legend\ Hollow.ttf") format("truetype");
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: "Spider-Man";
+        }
+
+        img {
+            height: 300px;
+        }
+    </style>
+
+    <script>
+        let contPorcoAranha = localStorage.getItem("porco-aranha");
+        let contMilesMorales = localStorage.getItem("miles-morales");
+        let contSpiderGwen = localStorage.getItem("spider-gwen");
+        let contSpiderPunk = localStorage.getItem("punk-aranha");
+
+        contPorcoAranha = parseInt(contPorcoAranha);
+        contMilesMorales = parseInt(contMilesMorales);
+        contSpiderGwen = parseInt(contSpiderGwen);
+        contSpiderPunk = parseInt(contSpiderPunk);
+
+        const totalQuestoes = 10;
+
+        const porcentagemMilesMorales = ((contMilesMorales / totalQuestoes) * 100).toFixed(2);
+        const porcentagemPorcoAranha = ((contPorcoAranha / totalQuestoes) * 100).toFixed(2);
+        const porcentagemSpiderGwen = ((contSpiderGwen / totalQuestoes) * 100).toFixed(2);
+        const porcentagemSpiderPunk = ((contSpiderPunk / totalQuestoes) * 100).toFixed(2);
+
+        document.querySelector('#porcentagem').innerHTML =
+            `Você é: <br>
+            ${porcentagemMilesMorales}% Miles Morales, <br>
+            ${porcentagemPorcoAranha}% Porco-Aranha, <br>
+            ${porcentagemSpiderGwen}% Spider-Gwen, <br>
+            ${porcentagemSpiderPunk}% Spider-Punk.`;
+    </script>
+</body>
+
+</html>

@@ -1,16 +1,39 @@
 @font-face {
     font-family: "Spider-Man";
-    src: url("/resources/font/HeroesLegend.ttf") format("truetype");
+    src: url("/resources/font/Heroes\ Legend\ Hollow.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Spider-ManHQ";
-    src: url("/resources/font/Heroes\ Legend\ Hollow.ttf");
+    src: url("/resources/font/HeroesLegend.ttf");
 }
 
 * {
     margin: 0;
     padding: 0;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #0138d1;
+}
+
+body{
+    background-image: url("/resources/imgs/Background.jpg");
+    background-position:center;
+    background-size: contain;
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.corpo, .rodape, .rodape button{
+    font-family: "Spider-ManHQ";
 }
 
 .cabecalho {
@@ -19,36 +42,190 @@
     align-items: center;
     text-align: center;
     color: white;
-    width: 90%;
-    padding: 20vw 4.9vw 20vw 5vw;
-    background-image: url("/resources/imgs/Background3.jpg");
+    width: 89.9%;
+    padding: 5vw 5vw 5vw 5vw;
+    background-image: url("/resources/imgs/Background.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
+
 .titulo {
     width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
 }
 
 .titulo h1 {
-    width: 100%;
+    width: 60%;
     margin-bottom: 2%;
-    color: #d4192d
+    color: #d4192d;
+    background-color: #FFFFFFd0;
+    box-shadow: 5px 5px 15px #000000, -10px 0 #ffffff00;
+    border: solid #ed1d24 5px;
+    
     
 }
 
 .titulo h2 {
-    width: 100%;
+    width: 60%;
     color: #0138d1;
+    background-color: #FFFFFFd0;
+    box-shadow: 5px 5px 15px #000000, -10px 0 #ffffff00;
+    border: solid   #0077f2 5px;
 
 }
 
-.corpo, .rodape, .rodape button{
-    font-family: "Spider-ManHQ";
+.corpo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
 }
 
-.pergunta1 {
+.boxresp1, .boxresp2, .boxresp3, .boxresp4, .boxresp5, .boxresp6, .boxresp7, .boxresp8, .boxresp9, .boxresp10{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 90%;
+    padding: 5%;
+    gap: 1rem;
+
+}
+
+.pergunta1{
+    background-image: url("/resources/imgs/Background1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 75%;
+    padding: 5vw 5vw 5vw 5vw;
+}
+
+.pergunta1 h3, p{
+    padding: 3%;
+    background-color: #d4192d;
+}
+
+.boxresp1 input, label{
+    padding: 2vw 3vw 2vw 3vw;
+    background-color: #d4192d;
+    box-shadow: 5px 5px 15px #000000, -10px 0 #ffffff00;
+    border: solid #000000 5px;
     
 }
 
+.boxresp1 label{
+    padding: 2vw 3vw 2vw 3vw;
+    
+}
+
+
+.pergunta2{
+    background-image: url("/resources/imgs/Background2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 75%;
+    padding: 5vw 5vw 5vw 5vw;
+}
+
+.pergunta3{
+    background-image: url("/resources/imgs/Background3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 75%;
+    padding: 5vw 5vw 5vw 5vw;
+}
+
+.pergunta4{
+    background-image: url("/resources/imgs/Background4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 75%;
+    padding: 5vw 5vw 5vw 5vw;
+}
+
+.pergunta5{
+    background-image: url("/resources/imgs/Background5.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 75%;
+    padding: 5vw 5vw 5vw 5vw;
+}
+
+.pergunta6{
+    background-image: url("/resources/imgs/Background6.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 75%;
+    padding: 5vw 5vw 5vw 5vw;
+}
+
+.pergunta7{
+    background-image: url("/resources/imgs/Background7.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 75%;
+    padding: 5vw 5vw 5vw 5vw;
+}
+
+.pergunta8{
+    background-image: url("/resources/imgs/Background8.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 75%;
+    padding: 5vw 5vw 5vw 5vw;
+}
+
+.pergunta9{
+    background-image: url("/resources/imgs/Background9.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 75%;
+    padding: 5vw 5vw 5vw 5vw;
+}
+
+.pergunta10{
+    background-image: url("/resources/imgs/Background10.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 75%;
+    padding: 5vw 5vw 5vw 5vw;
+}
+
+.rodape {
+    width: 89.9%;
+    padding: 5vw 5vw 5vw 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000000;
+    color: #d4192d;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
