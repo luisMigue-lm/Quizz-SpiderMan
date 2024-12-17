@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <img src="https://media.tenor.com/lzb4ce_bNEYAAAAj/gwen-stacy-gwen.gif" alt="GIF da Spider Gwen">
+    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExem13M2pobjI0YzM4Z3hjc3prNnZ5ajlzeWVuOXhsb2ZpZW5sdWx1eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VJZRVKI1nZizV5bZkE/giphy.webp" alt="GIF da Spider Gwen">
     <h1>Você é a Spider Gwen</h1>
     <p>A Gwen Stacy interage frequentemente com as pessoas ao seu redor, engaja-se em conversas e realmente gosta de
         socializar. Sua atitude amigável e calorosa permite que ela estabeleça relacionamentos significativos e
@@ -28,12 +28,53 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            font-family: "Spider-Man";
+            font-family: "Spider-Man", sans-serif;
+            background: linear-gradient(135deg, #973196, #0199bf);
+            color: #fff;
+            text-align: center;
         }
 
         img {
-            height: 300px;
+            height: 350px;
+            border: 5px solid #0199bf;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #0199bf;
+            max-width: 100%;
         }
+
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(90deg, #0199bf, #fff);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        #porcentagem {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #973196;
+            text-shadow: 2px 2px 0 #000;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            #porcentagem {
+                font-size: 1.2rem;
+            }
+        }
+
     </style>
 
     <script>

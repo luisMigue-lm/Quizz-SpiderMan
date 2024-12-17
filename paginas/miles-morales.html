@@ -17,29 +17,70 @@
             src: url("/resources/font/Heroes\ Legend\ Hollow.ttf") format("truetype");
         }
 
-        body{
+        body {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            font-family: "Spider-Man";
+            font-family: "Spider-Man", sans-serif;
+            background: linear-gradient(135deg, #cf222a, #1a0d18);
+            color: #fff;
+            text-align: center;
         }
 
-        img{
-            height: 400px;
+        img {
+            height: 350px;
+            border: 5px solid #1a0d18;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #1a0d18;
+            max-width: 100%;
         }
+
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(90deg, #1a0d18, #fff);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        #porcentagem {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #cf222a;
+            text-shadow: 2px 2px 0 #000;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            #porcentagem {
+                font-size: 1.2rem;
+            }
+        }
+
     </style>
 
     <script>
         let contMiles = localStorage.getItem("miles-morales")
-        contMilesMorales = parseInt(contMilesMorales);
+        contMiles = parseInt(contMiles);
         const totalQuestoes = 10;
-        const porcentagemMilesMorales = ((contMilesMorales / totalQuestoes) * 100).toFixed(2);
+        const porcentagemMilesMorales = ((contMiles / totalQuestoes) * 100).toFixed(2);
 
 
-        document.querySelector('#porcentagem').innerHTML = 'Você é '+ porcentagemMilesMorales + " Miles Morales!"
+        document.querySelector('#porcentagem').innerHTML = 'Você é '+ porcentagemMilesMorales + "% Miles Morales!"
     </script>
 </body>
 </html>

@@ -6,10 +6,12 @@
     <title>Você é o...</title>
 </head>
 <body>
-    <img src="https://media1.tenor.com/m/8a3hDwQCWLUAAAAd/spiderpunk.gif" alt="GIF do Spider Punk">
-    <h1>Você é o Spider Punk</h1>
-    <p>O Spider-Punk é cheio de atitude, com um ar indiferente ao que todos pensam e muita energia contra as corporações.</p>
-    <p id="porcentagem"></p>
+    <div class="corpo">
+        <img src="https://media1.tenor.com/m/8a3hDwQCWLUAAAAd/spiderpunk.gif" alt="GIF do Spider Punk">
+        <h1>Você é o Spider Punk</h1>
+        <p>O Spider-Punk é cheio de atitude, com um ar indiferente ao que todos pensam e muita energia contra as corporações.</p>
+        <p id="porcentagem"></p>
+    </div>
 
     <style>
         @font-face {
@@ -17,20 +19,62 @@
             src: url("/resources/font/Heroes\ Legend\ Hollow.ttf") format("truetype");
         }
 
-        body{
+        body {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            font-family: "Spider-Man";
+            font-family: "Spider-Man", sans-serif;
+            background: linear-gradient(135deg, #174fa5, #b41f38);
+            color: #fff;
+            text-align: center;
         }
 
-        img{
+        img {
             height: 350px;
+            border: 5px solid #b41f38;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #b41f38;
+            max-width: 100%;
         }
+
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(90deg, #b41f38, #fff);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        #porcentagem {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff004c;
+            text-shadow: 2px 2px 0 #000;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            #porcentagem {
+                font-size: 1.2rem;
+            }
+        }
+
     </style>
+
 
     <script>
         let contSpiderPunk = localStorage.getItem("punk-aranha")
