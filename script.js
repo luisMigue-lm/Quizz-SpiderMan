@@ -80,7 +80,12 @@ function temporizador() {
 
     if (contador < 0) {
       clearInterval(interval);
-      window.open("/paginas/" + pag + ".html");
+      window.open("paginas/" + pag + ".html");
+
+      contMilesMorales = 0;
+      contPorcoAranha = 0;
+      contSpiderGwen = 0;
+      contSpiderPunk = 0;
     }
   }, 1000);
 }
