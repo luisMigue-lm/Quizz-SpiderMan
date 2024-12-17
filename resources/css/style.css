@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Spider-Man";
-    src: url("./resources/font/Heroes\ Legend\ Hollow.ttf") format("truetype");
+    src: url("/resources/font/Heroes\ Legend\ Hollow.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Spider-ManHQ";
-    src: url("./resources/font/HeroesLegend.ttf");
+    src: url("/resources/font/HeroesLegend.ttf");
 }
 
 * {
@@ -22,7 +22,7 @@ input[type="radio"]:checked + label {
 }
 
 body{
-    background-image: url("./resources/imgs/Background.png");
+    background-image: url("/resources/imgs/Background.png");
     background-position:center;
     background-size: contain;
     background-repeat: repeat;
@@ -44,7 +44,7 @@ body{
     color: white;
     width: 89.9%;
     padding: 5vw 5vw 5vw 5vw;
-    background-image: url("./resources/imgs/Background.png");
+    background-image: url("/resources/imgs/Background.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -98,7 +98,7 @@ body{
 }
 
 .pergunta1{
-    background-image: url("./resources/imgs/Background1.png");
+    background-image: url("/resources/imgs/Background1.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -127,7 +127,7 @@ body{
 
 
 .pergunta2{
-    background-image: url("./resources/imgs/Background2.png");
+    background-image: url("/resources/imgs/Background2.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -137,7 +137,7 @@ body{
 }
 
 .pergunta3{
-    background-image: url("./resources/imgs/Background3.png");
+    background-image: url("/resources/imgs/Background3.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -147,7 +147,7 @@ body{
 }
 
 .pergunta4{
-    background-image: url("./resources/imgs/Background4.png");
+    background-image: url("/resources/imgs/Background4.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -157,7 +157,7 @@ body{
 }
 
 .pergunta5{
-    background-image: url("./resources/imgs/Background5.png");
+    background-image: url("/resources/imgs/Background5.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -167,7 +167,7 @@ body{
 }
 
 .pergunta6{
-    background-image: url("./resources/imgs/Background6.png");
+    background-image: url("/resources/imgs/Background6.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -177,7 +177,7 @@ body{
 }
 
 .pergunta7{
-    background-image: url("./resources/imgs/Background7.png");
+    background-image: url("/resources/imgs/Background7.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -187,7 +187,7 @@ body{
 }
 
 .pergunta8{
-    background-image: url("./resources/imgs/Background8.png");
+    background-image: url("/resources/imgs/Background8.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -197,7 +197,7 @@ body{
 }
 
 .pergunta9{
-    background-image: url("./resources/imgs/Background9.png");
+    background-image: url("/resources/imgs/Background9.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -207,7 +207,7 @@ body{
 }
 
 .pergunta10{
-    background-image: url("./resources/imgs/Background10.png");
+    background-image: url("/resources/imgs/Background10.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
