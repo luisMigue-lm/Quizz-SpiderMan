@@ -22,7 +22,7 @@ input[type="radio"]:checked + label {
 }
 
 body{
-    background-image: url("/resources/imgs/Background.png");
+    background-image: url("resources/imgs/Background.png");
     background-position:center;
     background-size: contain;
     background-repeat: repeat;
