@@ -515,9 +515,11 @@ body{
         flex-direction: column;
         padding: 0;
         margin: 0;
+        line-height: 8vw; 
+        
     }
-
-    .cabecalho, .corpo, .rodape {
+    
+    .cabecalho, .corpo {
         width: 100%;
         padding: 3vw;
         padding: 0;
@@ -530,11 +532,11 @@ body{
 
     .titulo h1, .titulo h2 {
         width: 80%;
-        font-size: 2em;
+        font-size: 1.3em;
     }
 
     .perguntas h3, .perguntas p {
-        font-size: 2em;
+        font-size: 1.3em;
         padding: 2vw;
     }
 
@@ -553,12 +555,12 @@ body{
     .boxresp9 label, 
     .boxresp10 label {
         padding: 4vw;
-        font-size: 1.5em;
+        font-size: 1em;
         width: 100%;
     }
 
     .rodape button {
-        font-size: 1.3em;
-        padding: 3vw;
+        font-size: 1.2em;
+        padding: 4vw;
     }
 }
