@@ -96,12 +96,29 @@
     </style>
 
     <script>
-        let contPorcoAranha = localStorage.getItem("porco-aranha")
-        contPorcoAranha = parseInt(contPorcoAranha);
-        const totalQuestoes = 10;
-        const porcentagemPorcoAranha = ((contPorcoAranha / totalQuestoes) * 100).toFixed(2);
+        let contPorcoAranha = localStorage.getItem("porco-aranha");
+        let contMilesMorales = localStorage.getItem("miles-morales");
+        let contSpiderGwen = localStorage.getItem("spider-gwen");
+        let contSpiderPunk = localStorage.getItem("punk-aranha");
 
-        document.querySelector('#porcentagem').innerHTML = 'Você é '+ porcentagemPorcoAranha + "% Porco Aranha!"
+        contPorcoAranha = parseInt(contPorcoAranha);
+        contMilesMorales = parseInt(contMilesMorales);
+        contSpiderGwen = parseInt(contSpiderGwen);
+        contSpiderPunk = parseInt(contSpiderPunk);
+
+        const totalQuestoes = 10;
+
+        const porcentagemMilesMorales = ((contMilesMorales / totalQuestoes) * 100).toFixed(2);
+        const porcentagemPorcoAranha = ((contPorcoAranha / totalQuestoes) * 100).toFixed(2);
+        const porcentagemSpiderGwen = ((contSpiderGwen / totalQuestoes) * 100).toFixed(2);
+        const porcentagemSpiderPunk = ((contSpiderPunk / totalQuestoes) * 100).toFixed(2);
+        
+        document.querySelector('#porcentagem').innerHTML = `
+            Você é ${porcentagemPorcoAranha}% Porco Aranha!
+            <br> Outros resultados: <br>
+            ${porcentagemMilesMorales}% Miles Morales, <br>
+            ${porcentagemSpiderGwen}% Spider-Gwen, <br>
+            ${porcentagemSpiderPunk}% Spider-Punk.`
     </script>
 </body>
 </html>

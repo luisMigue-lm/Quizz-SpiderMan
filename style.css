@@ -46,7 +46,7 @@ body{
     padding: 5vw 5vw 5vw 5vw;
     background-image: url("resources/imgs/Background.png");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -57,6 +57,7 @@ body{
     align-items: center;
     text-align: center;
     flex-direction: column;
+
 }
 
 .titulo h1 {
@@ -66,6 +67,7 @@ body{
     background-color: #FFFFFFd0;
     box-shadow: 5px 5px 15px #000000, -10px 0 #ffffff00;
     border: solid #ed1d24 5px;
+    padding: 3%;
     
     
 }
@@ -76,6 +78,7 @@ body{
     background-color: #FFFFFFd0;
     box-shadow: 5px 5px 15px #000000, -10px 0 #ffffff00;
     border: solid   #0077f2 5px;
+    padding: 3%;
 
 }
 
@@ -106,18 +109,21 @@ body{
     width: 75%;
     padding: 5vw 5vw 5vw 5vw;
     border: solid #FFFFFF 5px;
+
 }
 
 .pergunta1 h3{
     padding: 3%;
     background-color: #FFFFFFd0;
     border: solid #000000 5px;
+
 }
 
 .pergunta1 p{
     padding: 3%;
     background-color: #FFFFFFd0;
     border: solid #000000 5px;
+
 }
 
 .boxresp1 input, label{
@@ -125,6 +131,7 @@ body{
     background-color: #111111d0;
     box-shadow: 5px 5px 15px #000000, -10px 0 #ffffff00;
     border: solid #000000 5px;
+    border-radius: 25px;
     
 }
 
@@ -163,6 +170,7 @@ body{
     background-color: #111111d0;
     box-shadow: 5px 5px 15px #000000, -10px 0 #ffffff00;
     border: solid #000000 5px;
+    border-radius: 25px;
     
 }
 
@@ -200,7 +208,7 @@ body{
     background-color: #111111d0;
     box-shadow: 5px 5px 15px #000000, -10px 0 #ffffff00;
     border: solid #000000 5px;
-    
+    border-radius: 25px;
 }
 
 .boxresp3 label{
@@ -238,6 +246,7 @@ body{
     background-color: #111111d0;
     box-shadow: 5px 5px 15px #000000, -10px 0 #ffffff00;
     border: solid #000000 5px;
+    border-radius: 25px;
     
 }
 
@@ -276,6 +285,7 @@ body{
     background-color: #111111d0;
     box-shadow: 5px 5px 15px #000000, -10px 0 #ffffff00;
     border: solid #000000 5px;
+    border-radius: 25px;
     
 }
 
@@ -314,6 +324,7 @@ body{
     background-color: #111111d0;
     box-shadow: 5px 5px 15px #000000, -10px 0 #ffffff00;
     border: solid #000000 5px;
+    border-radius: 25px;
     
 }
 
@@ -352,6 +363,7 @@ body{
     background-color: #111111d0;
     box-shadow: 5px 5px 15px #000000, -10px 0 #ffffff00;
     border: solid #000000 5px;
+    border-radius: 25px;
     
 }
 
@@ -390,7 +402,8 @@ body{
     background-color: #111111d0;
     box-shadow: 5px 5px 15px #000000, -10px 0 #ffffff00;
     border: solid #000000 5px;
-    
+    border-radius: 25px;
+
 }
 
 .boxresp8 label{
@@ -428,6 +441,7 @@ body{
     background-color: #111111d0;
     box-shadow: 5px 5px 15px #000000, -10px 0 #ffffff00;
     border: solid #000000 5px;
+    border-radius: 25px;
     
 }
 
@@ -466,6 +480,7 @@ body{
     background-color: #111111d0;
     box-shadow: 5px 5px 15px #000000, -10px 0 #ffffff00;
     border: solid #000000 5px;
+    border-radius: 25px;
     
 }
 
@@ -487,4 +502,63 @@ body{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.rodape button {
+    padding: 2%;
+    border: solid #000000 5px;
+    border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .cabecalho, .corpo, .rodape {
+        width: 100%;
+        padding: 3vw;
+        padding: 0;
+    }
+
+    .cabecalho{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .titulo h1, .titulo h2 {
+        width: 80%;
+        font-size: 2em;
+    }
+
+    .perguntas h3, .perguntas p {
+        font-size: 2em;
+        padding: 2vw;
+    }
+
+    .boxresp1, .boxresp2, .boxresp3, .boxresp4, .boxresp5, .boxresp6, .boxresp7, .boxresp8, .boxresp9, .boxresp10 {
+        flex-direction: column;
+    }
+
+    .boxresp1 label, 
+    .boxresp2 label, 
+    .boxresp3 label, 
+    .boxresp4 label, 
+    .boxresp5 label, 
+    .boxresp6 label, 
+    .boxresp7 label, 
+    .boxresp8 label, 
+    .boxresp9 label, 
+    .boxresp10 label {
+        padding: 4vw;
+        font-size: 1.5em;
+        width: 100%;
+    }
+
+    .rodape button {
+        font-size: 1.3em;
+        padding: 3vw;
+    }
 }
