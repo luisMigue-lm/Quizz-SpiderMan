@@ -32,6 +32,10 @@ function calcularPontuacao() {
   
     } else {
         alert("Por favor, responda todas as 10 questões antes de continuar!");
+        contMilesMorales = 0;
+        contPorcoAranha = 0;
+        contSpiderGwen = 0;
+        contSpiderPunk = 0;
     }
 }
 
