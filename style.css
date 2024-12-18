@@ -559,8 +559,24 @@ body{
         width: 100%;
     }
 
+    .rodape {
+        width: 90%;
+        padding: 5vw;
+    }
+    
+    .rodape h1 {
+        margin: 9vw 7vw 9vw 7vw;
+        text-align: center; 
+         
+    }
+
+    #resultado{
+        line-height: 10vw; 
+    }
+
     .rodape button {
         font-size: 1.2em;
         padding: 4vw;
+        margin-bottom: 2vw;
     }
 }
