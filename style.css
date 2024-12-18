@@ -18,7 +18,7 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked + label {
-    border: solid #18814d 7.5px;
+    border: solid #0199bf 7.5px;
 }
 
 body{

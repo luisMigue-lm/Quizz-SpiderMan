@@ -14,7 +14,7 @@
     <style>
         @font-face {
             font-family: "Spider-Man";
-            src: url("/resources/font/Heroes\ Legend\ Hollow.ttf") format("truetype");
+            src: url("/resources/font/Heroes_Legend_Hollow.ttf") format("truetype");
         }
 
         body {
@@ -66,8 +66,30 @@
                 font-size: 1rem;
             }
 
+            img {
+                max-height: 250px;
+            }
+
             #porcentagem {
                 font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.7rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            img {
+                max-height: 180px;
+            }
+
+            #porcentagem {
+                font-size: 0.9rem;
             }
         }
 
